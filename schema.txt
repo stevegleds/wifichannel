@@ -1,0 +1,292 @@
+wifichanneljsonschema = "  1 {
+  2   "definitions": {},
+  3   "$schema": "http://json-schema.org/draft-07/schema#",
+  4   "$id": "http://example.com/root.json",
+  5   "type": "object",
+  6   "title": "The Root Schema",
+  7   "required": [
+  8     "Charging",
+  9     "Lat",
+ 10     "Lon",
+ 11     "Acc",
+ 12     "CountryCode",
+ 13     "CityName",
+ 14     "OS",
+ 15     "NetworkOperator",
+ 16     "SimOperator",
+ 17     "CellularType",
+ 18     "RSSI",
+ 19     "LinkSpeed",
+ 20     "SignalStrengthString",
+ 21     "BSSID",
+ 22     "ActiveConnection",
+ 23     "DeviceInfo",
+ 24     "PackageName",
+ 25     "CommandResult",
+ 26     "CommandName",
+ 27     "UniqueID",
+ 28     "Version",
+ 29     "OSVersion",
+ 30     "Retry",
+ 31     "AsnID",
+ 32     "NetworkName",
+ 33     "City"
+ 34   ],
+ 35   "properties": {
+ 36     "Charging": {
+ 37       "$id": "#/properties/Charging",
+ 38       "type": "integer",
+ 39       "title": "The Charging Schema",
+ 40       "default": 0,
+ 41       "examples": [
+ 42         1
+ 43       ]
+ 44     },
+ 45     "Lat": {
+ 46       "$id": "#/properties/Lat",
+ 47       "type": "number",
+ 48       "title": "The Lat Schema",
+ 49       "default": 0.0,
+ 50       "examples": [
+ 51         48.7341133
+ 52       ]
+ 53     },
+ 54     "Lon": {
+ 55       "$id": "#/properties/Lon",
+ 56       "type": "number",
+ 57       "title": "The Lon Schema",
+ 58       "default": 0.0,
+ 59       "examples": [
+ 60         2.2230035
+ 61       ]
+ 62     },
+ 63     "Acc": {
+ 64       "$id": "#/properties/Acc",
+ 65       "type": "number",
+ 66       "title": "The Acc Schema",
+ 67       "default": 0.0,
+ 68       "examples": [
+ 69         15.6850004196167
+ 70       ]
+ 71     },
+ 72     "CountryCode": {
+ 73       "$id": "#/properties/CountryCode",
+ 74       "type": "string",
+ 75       "title": "The Countrycode Schema",
+ 76       "default": "",
+ 77       "examples": [
+ 78         "FR"
+ 79       ],
+ 80       "pattern": "^(.*)$"
+ 81     },
+ 82     "CityName": {
+ 83       "$id": "#/properties/CityName",
+ 84       "type": "string",
+ 85       "title": "The Cityname Schema",
+ 86       "default": "",
+ 87       "examples": [
+ 88         "Igny"
+ 89       ],
+ 90       "pattern": "^(.*)$"
+ 91     },
+ 92     "OS": {
+ 93       "$id": "#/properties/OS",
+ 94       "type": "string",
+ 95       "title": "The Os Schema",
+ 96       "default": "",
+ 97       "examples": [
+ 98         "8.0.0-2018-10-01"
+ 99       ],
+100       "pattern": "^(.*)$"
+101     },
+102     "NetworkOperator": {
+103       "$id": "#/properties/NetworkOperator",
+104       "type": "string",
+105       "title": "The Networkoperator Schema",
+106       "default": "",
+107       "examples": [
+108         "20815"
+109       ],
+110       "pattern": "^(.*)$"
+111     },
+112     "SimOperator": {
+113       "$id": "#/properties/SimOperator",
+114       "type": "string",
+115       "title": "The Simoperator Schema",
+116       "default": "",
+117       "examples": [
+118         "20815"
+119       ],
+120       "pattern": "^(.*)$"
+121     },
+122     "CellularType": {
+123       "$id": "#/properties/CellularType",
+124       "type": "string",
+125       "title": "The Cellulartype Schema",
+126       "default": "",
+127       "examples": [
+128         "UMTS"
+129       ],
+130       "pattern": "^(.*)$"
+131     },
+132     "RSSI": {
+133       "$id": "#/properties/RSSI",
+134       "type": "string",
+135       "title": "The Rssi Schema",
+136       "default": "",
+137       "examples": [
+138         "-70"
+139       ],
+140       "pattern": "^(.*)$"
+141     },
+142     "LinkSpeed": {
+143       "$id": "#/properties/LinkSpeed",
+144       "type": "integer",
+145       "title": "The Linkspeed Schema",
+146       "default": 0,
+147       "examples": [
+148         72
+149       ]
+150     },
+151     "SignalStrengthString": {
+152       "$id": "#/properties/SignalStrengthString",
+153       "type": "string",
+154       "title": "The Signalstrengthstring Schema",
+155       "default": "",
+156       "examples": [
+157         "8 0 -120 -160 -120 -1 -1 99 2147483647 2147483647 2147483647 2147483647 0 2147483647 gsm|lte"
+158       ],
+159       "pattern": "^(.*)$"
+160     },
+161     "BSSID": {
+162       "$id": "#/properties/BSSID",
+163       "type": "string",
+164       "title": "The Bssid Schema",
+165       "default": "",
+166       "examples": [
+167         "34:97:f6:6e:68:a0"
+168       ],
+169       "pattern": "^(.*)$"
+170     },
+171     "ActiveConnection": {
+172       "$id": "#/properties/ActiveConnection",
+173       "type": "string",
+174       "title": "The Activeconnection Schema",
+175       "default": "",
+176       "examples": [
+177         "WIFI"
+178       ],
+179       "pattern": "^(.*)$"
+180     },
+181     "DeviceInfo": {
+182       "$id": "#/properties/DeviceInfo",
+183       "type": "string",
+184       "title": "The Deviceinfo Schema",
+185       "default": "",
+186       "examples": [
+187         "Xiaomi|MI 5"
+188       ],
+189       "pattern": "^(.*)$"
+190     },
+191     "PackageName": {
+192       "$id": "#/properties/PackageName",
+193       "type": "string",
+194       "title": "The Packagename Schema",
+195       "default": "",
+196       "examples": [
+197         "uk.co.broadbandspeedchecker"
+198       ],
+199       "pattern": "^(.*)$"
+200     },
+201     "CommandResult": {
+202       "$id": "#/properties/CommandResult",
+203       "type": "string",
+204       "title": "The Commandresult Schema",
+205       "default": "",
+206       "examples": [
+207         "|HostNames=ipv4-c013-cdg001-ix.1.oca.nflxvideo.net,ipv4-c103-cdg001-ix.1.oca.nflxvideo.net,ipv4-c329-nyc001-ix.1.oca.nflxvideo.net,ipv4-c354-nyc001-ix.1.oca.nflxvideo.net,ipv4-c122-was001-ix.1.oca.nflxvideo.net|Ping=988,82,121,122,139|DownloadSpeed=2.506|TotalTimeDownload=2043|TotalKBytesDownload=592|UploadSpeed=0.0|TotalTimeUpload=2055|TotalKBytesUpload=0|Cities=Open Connect:Netflix;Open Connect:Netflix;Open Connect:Netflix;Open Connect:Netflix;Open Connect:Netflix|IP=90.92.182.11|ConnectionType=WIFI<CMD>|Speed=1.17|Pings=79.3,25.6,73.1|ERROR=wifiNetworkList does not content our SSID"
+208       ],
+209       "pattern": "^(.*)$"
+210     },
+211     "CommandName": {
+212       "$id": "#/properties/CommandName",
+213       "type": "string",
+214       "title": "The Commandname Schema",
+215       "default": "",
+216       "examples": [
+217         "PROBE|id=j2c1<CMD>NETFLIXSPEEDTEST|ping=1|hostNames=1|cities=1<CMD>ROUTERSPEEDTEST|"
+218       ],
+219       "pattern": "^(.*)$"
+220     },
+221     "UniqueID": {
+222       "$id": "#/properties/UniqueID",
+223       "type": "string",
+224       "title": "The Uniqueid Schema",
+225       "default": "",
+226       "examples": [
+227         "3b270d39-d464-42c3-b6d9-7937c144a625"
+228       ],
+229       "pattern": "^(.*)$"
+230     },
+231     "Version": {
+232       "$id": "#/properties/Version",
+233       "type": "string",
+234       "title": "The Version Schema",
+235       "default": "",
+236       "examples": [
+237         "4.2.36|2.6.23"
+238       ],
+239       "pattern": "^(.*)$"
+240     },
+241     "OSVersion": {
+242       "$id": "#/properties/OSVersion",
+243       "type": "string",
+244       "title": "The Osversion Schema",
+245       "default": "",
+246       "examples": [
+247         "26|8.0.0"
+248       ],
+249       "pattern": "^(.*)$"
+250     },
+251     "Retry": {
+252       "$id": "#/properties/Retry",
+253       "type": "string",
+254       "title": "The Retry Schema",
+255       "default": "",
+256       "examples": [
+257         "0"
+258       ],
+259       "pattern": "^(.*)$"
+260     },
+261     "AsnID": {
+262       "$id": "#/properties/AsnID",
+263       "type": "string",
+264       "title": "The Asnid Schema",
+265       "default": "",
+266       "examples": [
+267         "3215"
+268       ],
+269       "pattern": "^(.*)$"
+270     },
+271     "NetworkName": {
+272       "$id": "#/properties/NetworkName",
+273       "type": "string",
+274       "title": "The Networkname Schema",
+275       "default": "",
+276       "examples": [
+277         "Orange"
+278       ],
+279       "pattern": "^(.*)$"
+280     },
+281     "City": {
+282       "$id": "#/properties/City",
+283       "type": "string",
+284       "title": "The City Schema",
+285       "default": "",
+286       "examples": [
+287         "Paris"
+288       ],
+289       "pattern": "^(.*)$"
+290     }
+291   }
+292 }
